@@ -1,0 +1,252 @@
+/*
+  ****** Styles for carousel  ******
+ */
+.main-carousel {
+  height: 100vh !important;
+}
+
+
+.main-carousel .slide1 {  background-image: url("images/slideshow/v1.jpg"); }
+.main-carousel .slide2 {  background-image: url("images/slideshow/v2.jpg"); }
+.main-carousel .slide3 {  background-image: url("images/slideshow/v3.jpg"); }
+.main-carousel .slide4 {  background-image: url("images/slideshow/v4.jpg"); }
+
+
+.main-carousel .carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-carousel .carousel-item .mask {
+  width: 100%;
+  height: 100%;
+  background-color: #0000009a;
+}
+
+.main-carousel .carousel-item .carousel-text {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  height: 100%;
+}
+
+.main-carousel .carousel-item .carousel-text div {
+  width: 100%;
+}
+
+.main-carousel .carousel-item .carousel-text div h1 {
+  color: white;
+  width: 100%;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-carousel .carousel-item .carousel-text div p {
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Styles for disabling the user selection when user slide the image */
+/* These styles are for making the sliding experience better */
+.main-carousel .carousel-item .carousel-text div h1,
+.main-carousel .carousel-item .carousel-text div p {
+  user-select: none;
+}
+
+/* ****** Styles for contact navbar *******  */
+
+nav.contact-nav {
+  background-color: rgb(33, 33, 33, .6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-height: 130px;
+}
+
+.contact-nav a {
+  margin: 20px;
+  top: -4px;
+  position: relative;
+  font-family: Raleway;
+}
+
+.contact-nav .social-links {
+  float: right;
+  top: -20px;
+  position: relative;
+}
+
+.contact-nav .social-links:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.contact-nav a i {
+  font-size: 17px;
+  padding: 0 8px 0 0;
+}
+
+.contact-nav .slash {
+  font-size: 25px;
+  position: relative;
+  font-weight: lighter;
+  top: -2px;
+  display: inline-block;
+  transform: skewX(-20deg);
+}
+
+
+/* ******* Styles for Introductory Para ******** */
+.intro-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.intro-container div {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.intro-container div > *:not(.intro-content) {
+  text-align: center;
+}
+
+.intro-container h2 {
+  font-family: Cambria;
+  font-size: 60px;
+  text-align: center;
+  /*width: 100%;*/
+}
+
+.intro-container p.intro-subline {
+  color: grey;
+  font-style: italic;
+  font-family: Cambria;
+  font-size: 20px;
+}
+
+.intro-container p.intro-content {
+  font-size: 18px;
+  text-align: justify;
+  top: -15px;
+  position: relative;
+  font-family: Cambria;
+}
+
+.intro-container .intro-underline {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  ********
+  ********
+  Tablet Styles
+  ********
+  ********
+ */
+
+@media screen and (max-width: 760px) {
+  /* ****** Styles for carouel ****** */
+  .main-carousel .carousel-item .carousel-text div {
+    padding: 0 10px;
+  }
+
+  .main-carousel .carousel-item .carousel-text div h1 {
+    font-size: 55px;
+  }
+  .main-carousel .carousel-item .carousel-text div p {
+    font-size: 24px;
+  }
+
+
+  /* ***** Styles for Contact Navbar ****** */
+  nav.contact-nav {
+    display: none;
+  }
+
+  /* ***** Styles for Intrductory Container ****** */
+  .intro-container h2 {
+    font-size: 40px;
+  }
+
+  .intro-container .intro-content {
+    padding: 0 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  *******
+  *******
+  Mobile Styles
+  *******
+  *******
+*/
+
+@media screen and (max-width: 480px) {
+  /* ***** Styles for carousel ****** */
+  .main-carousel .carousel-item .carousel-text div {
+    padding: 0 10px;
+  }
+  .main-carousel .carousel-item .carousel-text div h1 {
+    font-size: 40px;
+  }
+  .main-carousel .carousel-item .carousel-text div p {
+    font-size: 16px;
+  }
+
+  /* ***** Styles for Contact Navbar ****** */
+  nav.contact-nav {
+    display: none;
+  }
+}
