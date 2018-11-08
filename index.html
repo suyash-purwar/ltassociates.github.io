@@ -441,8 +441,9 @@
       <div class = "valign-wrapper" style = "min-height: 90vh">
         <div class = "form-cover">
           <h2>Contact Us</h2>
+          <p id = "error-info" style = "top: -30px; position: relative; color: red; text-align: center"></p>
           <div class = "row" style = "width: 100%">
-            <form class = "col s12">
+            <form class = "col s12" id = "contactus-form">
               <div class = "row">
                 <div class = "input-field col s12 m6">
                   <i class = "far fa-user-circle prefix"></i>
@@ -465,7 +466,7 @@
               <div class = "row">
                 <div class = "input-field col s12">
                   <i class = "far fa-comments prefix"></i>
-                  <textarea id="message" class="materialize-textarea" name = "message"></textarea>
+                  <textarea id="message" class="validate materialize-textarea" name = "message"></textarea>
                   <label for="message">Message</label>
                 </div>
               </div>
@@ -581,10 +582,12 @@
   </div>
 
   <!-- Compiled and minified JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src = "js/jquery-drawsvg.js"></script>
   <script src = "index.js"></script>
+  <script src = "js/contact.js"></script>
 </body>
 
 </html>

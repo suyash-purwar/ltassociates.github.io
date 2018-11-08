@@ -90,6 +90,10 @@ body {
   z-index: -1;
 }
 
+button:focus {
+  background-color: white !important;
+}
+
 .mybtn > * {
   font-family: Cambria;
 }
