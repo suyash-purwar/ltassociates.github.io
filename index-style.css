@@ -454,81 +454,7 @@ nav.contact-nav {
   color: rgb(22, 34, 49);
 }
     
-/* Styles for footer section */
-.footer {
-  background-color: rgb(22, 34, 49);
-  padding: 10px 0;
-  top: 50px;
-  position: relative;
-  width: 100%;
-  position: relative;
-  min-height: 60vh;
-}
 
-.footer:before {
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-color: inherit;
-  width: 100%;
-  height: 100%;
-  transform-origin: bottom left;
-  transform: skewY(-5deg);
-  z-index: -1;
-}
-
-.footer .links-grid {
-  display: grid;
-  padding: 0 30px;
-  grid-template-columns: repeat(4, 3fr);
-  grid-gap: 20px;
-}
-
-.footer .links-grid div h5 {
-  bottom: 40px;
-}
-
-.footer .links-grid div ul li {
-  margin: 7px 0;
-}
-
-.footer .links-grid div ul li a {
-  color: white;
-  font-size: 15px;
-}
-
-.footer .links-grid div > * {
-  color: white;
-}
-
-.footer-grid-second {
-  display: grid;
-  padding: 0 30px;
-  grid-template-columns: 6fr 6fr;
-}
-
-.footer-grid-second .copyright-box p.copyright {
-  font-size: 15px;
-  color: white;
-}
-
-.footer-grid-second .followus-box a.footer-social-links {
-  margin: 0 10px;
-  font-size: 23px;
-  float: right;
-  color: white;
-  top: 13px;
-  position: relative;
-}
-
-.footer-grid-second .followus-box a.footer-social-links:after {
-  clear: both;
-  content: "";
-  display: block;
-}
 
 
 
@@ -632,16 +558,6 @@ nav.contact-nav {
   .contactus-container h2 {
     font-style: 40px;
   }
-
-  /* Styles for footer section */
-  .footer .links-grid {
-    grid-template-columns: 6fr 6fr;
-  }
-
-  .footer .links-grid div {
-    margin: 0 auto;
-    text-align: center;
-  }
 }
 
 
@@ -691,33 +607,5 @@ nav.contact-nav {
   /* ***** Styles for Contact Navbar ****** */
   nav.contact-nav {
     display: none;
-  }
-
-  /* Styles for footer section */
-  .footer .links-grid {
-    grid-template-columns: 12fr;
-  }
-
-  .footer .links-grid div {
-    margin: 0px;
-    text-align: left;
-  }
-
-  .footer .footer-grid-second {
-    border-top: 1px solid white;
-    grid-template-columns: 12fr;
-  }
-
-  .footer .footer-grid-second .copyright-box p.copyright {
-    text-align: center;
-  }
-
-  .footer .footer-grid-second .followus-box a {
-    top: 0;
-    display: inline-block;
-    float: left;
-    width: 33.33%;
-    margin: 0;
-    text-align: center;
   }
 }
