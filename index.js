@@ -1,9 +1,21 @@
-// For carousel
+// currentSlide.children[1].children[0].children[1].style.animation
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.main-carousel');
   const carouselInstance = M.Carousel.init(carousel, {
     fullWidth: true,
-    indicators: true
+    indicators: true,
+    onCycleTo: function(currentSlide) {
+      currentSlide.children[1].children[0].children[1].style.animation = "moveInBottom .7s ease-in";
+      setInterval(() => {
+        currentSlide.children[1].children[0].children[1].style.animation = "";
+      }, 3000)
+
+
+      currentSlide.children[1].children[0].children[0].style.animation = "moveInTop .7s ease-in";
+      setInterval(() => {
+        currentSlide.children[1].children[0].children[0].style.animation = "";
+      }, 3000)
+    }
   });
 
   setInterval(function() {
@@ -11,9 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 5000);
 });
 
-// Function for showing thw navbar after some scrolling
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems, {});
+});
+
 window.onscroll = function() {
-  navbarViewEngineForLargeScreens();
+  navbarViewEngineForLargeScreens(); // Function for showing thw navbar after some scrolling
+  svgIconAnimationViewEngine(); // Function for showing
 }
 
 function navbarViewEngineForLargeScreens() {
@@ -26,6 +43,20 @@ function navbarViewEngineForLargeScreens() {
   }
 }
 
+let count = 0;
+function svgIconAnimationViewEngine() {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    function counter() {
+      return count++;
+    }
+    if (counter() <= 0) {
+      var $svg = $('svg').drawsvg({
+        duration: 3000
+      });
+      $svg.drawsvg('animate');
+    }
+  }
+}
 
 // For large nav dropdowns
 document.addEventListener('DOMContentLoaded', function() {

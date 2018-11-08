@@ -14,25 +14,27 @@
 
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- ShareThis API -->
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ac4f51b003b52001341b3d4&product=custom-share-buttons"></script>
 </head>
 
 <body>
   <ul id="aboutus-dropdown" class="dropdown-content">
-    <li><a href = "aboutus/team.html">Our Team</a></li>
-    <li><a href = "aboutus/ethos.html">Our Ethos</a></li>
-    <li><a href = "aboutus/aboutfirm.html">About the firm</a></li>
+    <li><a href = "html/aboutus/team.html">Our Team</a></li>
+    <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+    <li><a href = "html/aboutus/aboutfirm.html">About the firm</a></li>
   </ul>
   <ul id="taxation-dropdown" class="dropdown-content">
-    <li><a href = "services/indirecttaxation.html">Indirect Taxation</a></li>
-    <li><a href = "services/directtaxation.html">Direct Taxation</a></li>
+    <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+    <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
   </ul>
   <ul id="services-dropdown" class="dropdown-content">
-    <li><a href = "services/corporate.html">Corporate Services</a></li>
-    <li><a href = "services/aduitassurance.html">Audit & Assurance Services</a></li>
-    <li><a href = "services/bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
+    <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+    <li><a href = "html/services/aduitassurance.html">Audit & Assurance Services</a></li>
+    <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
     <li><a href = "#!" class = "sub-dropdown" data-target="taxation-dropdown">Taxation</a></li>
-    <li><a href = "services/riskadvisory.html">Risk Advisory Services</a></li>
-    <li><a href = "services/other.html">Other Services</a></li>
+    <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+    <li><a href = "html/services/other.html">Other Services</a></li>
   </ul>
   <div id="large-screen-nav">
     <div class="navbar-fixed">
@@ -41,8 +43,8 @@
           <img src = "images/logos/logo.png">
         </a>
 
-        <a class = "menu" href = "menu/contact.html">Contact Us</a>
-        <a class = "menu" href = "menu/news.html">News</a>
+        <a class = "menu" href = "html/menu/contact.html">Contact Us</a>
+        <a class = "menu" href = "html/menu/news.html">News</a>
         <a href = "#!" class = "dropdown-trigger menu" data-target = "services-dropdown">Services</a>
         <a class = "aboutus-dropdown dropdown-trigger menu" href = "#!" data-target = "aboutus-dropdown">About Us</a>
         <a class = "menu" href = "index.html">Home</a>
@@ -79,24 +81,30 @@
     <li id = "aboutus-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-aboutus')"><a href = "#!">About Us</a></li>
     <li id = "dropdown-aboutus">
       <ul>
-        <li>Our Team</li>
-        <li>Our Ethos</li>
-        <li>About the firm</li>
+        <li><a href = "html/aboutus/team.html">Our Team</a></li>
+        <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+        <li><a href = "html/aboutus/aboutfirm.html">About the firm</a></li>
       </ul>
     </li>
     <li id = "dropdown-services-trigger" onclick = "toggleAboutusDropdown('dropdown-services')"><a href = "#!">Services</a></li>
     <li id = "dropdown-services">
       <ul>
-        <li>Corporate Services</li>
-        <li>Audit & Assurance Services</li>
-        <li>Book Keeping and Outsourcing Services</li>
-        <li>Taxation</li>
-        <li>Risk Advisory Services</li>
-        <li>Other Services</li>
+        <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+        <li><a href = "html/services/auditassurance.html">Audit & Assurance Services</a></li>
+        <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+        <li id = "taxation-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-taxation')">Taxation</li>
+        <li id = "dropdown-taxation">
+          <ul>
+            <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+          </ul>
+        </li>
+        <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+        <li><a href = "html/services/other.html">Other Services</a></li>
       </ul>
     </li>
-    <li><a href = "menu/news.html">News</a></li>
-    <li><a href = "menu/contact.html">Contact Us</a></li>
+    <li><a href = "html/menu/news.html">News</a></li>
+    <li><a href = "html/menu/contact.html">Contact Us</a></li>
   </ul>
 
 
@@ -106,7 +114,7 @@
       <div class="carousel-text valign-wrapper">
         <div>
           <h1>LT & Associates</h1>
-          <p>We strive to succeed by exceeding client expectations of affordability, quality and time-bound delivery schedules.</p>
+          <p id = "heading_secondary_1">We strive to succeed by exceeding client expectations of affordability, quality and time-bound delivery schedules.</p>
         </div>
       </div>
     </div>
@@ -115,7 +123,7 @@
       <div class="carousel-text valign-wrapper">
         <div>
           <h1>LT & Associates</h1>
-          <p>We believe in continuous development and collaborative growth.</p>
+          <p id = "heading_secondary_2">We believe in continuous development and collaborative growth.</p>
         </div>
       </div>
     </div>
@@ -124,7 +132,7 @@
       <div class="carousel-text valign-wrapper">
         <div>
           <h1>LT & Associates</h1>
-          <p>We platform a culture of transparency and responsibility.</p>
+          <p id = "heading_secondary_3">We platform a culture of transparency and responsibility.</p>
         </div>
       </div>
     </div>
@@ -133,7 +141,7 @@
       <div class="carousel-text valign-wrapper">
         <div>
           <h1>LT & Associates</h1>
-          <p>Our unique business model aims at delivering customized tailored solutions and services.</p>
+          <p id = "heading_secondary_4">Our unique business model aims at delivering customized tailored solutions and services.</p>
         </div>
       </div>
     </div>
@@ -174,13 +182,409 @@
         <p class="intro-content">It is a chartered accountant firm rendering comprehensive professional services, which includes audit, management consultancy, tax consultancy, accounting services, secretarial services etc.</p>
 
         <p class="intro-content">The firm represents a combination of specialized skills, which are geared to offers sound financial advice and personalized proactive services. Following the top corporate culture, we believe in delivering accurate, relevant and timely information to the decision makers using industry expertise.</p>
+
+        <button class = "mybtn"><a style = "color: rgb(22, 34, 49)" href = "html/aboutus/aboutfirm.html">Read More</a> <div></div></button>
       </div>
     </div>
   </div>
 
+  <!-- Qualities Section -->
+  <div class = "qualities-container valign-wrapper">
+    <div class = "g-container">
+      <div class = "quality-container-grid">
+
+          <div class = "quality-card">
+            <!-- eye -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="256.000000pt" height="256.000000pt" viewBox="0 0 256.000000 256.000000"
+             preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+            fill="none" stroke="#ffffff" stroke-width = "20">
+            <path d="M0 1790 l0 -769 108 107 c289 287 635 481 958 537 111 19 317 19 428
+            0 323 -56 672 -252 958 -537 l108 -108 0 770 0 770 -1280 0 -1280 0 0 -770z
+            m1318 378 c8 -8 12 -64 12 -188 0 -188 -3 -200 -50 -200 -47 0 -50 12 -50 200
+            0 188 3 200 50 200 14 0 31 -5 38 -12z m-698 -250 c122 -126 136 -150 104
+            -182 -32 -32 -56 -18 -181 104 -128 124 -142 149 -107 184 35 35 60 21 184
+            -106z m1504 106 c35 -35 21 -60 -106 -184 -126 -122 -150 -136 -182 -104 -32
+            32 -18 56 104 182 124 127 149 141 184 106z"/>
+            <path d="M1053 1549 c-268 -56 -523 -194 -791 -427 l-62 -55 18 -28 c96 -153
+            288 -316 489 -418 300 -151 679 -174 998 -61 262 93 512 281 637 479 l18 28
+            -62 55 c-271 236 -525 372 -798 428 -130 26 -319 26 -447 -1z m399 -156 c85
+            -40 151 -106 191 -191 30 -62 32 -75 32 -172 0 -97 -2 -110 -32 -172 -40 -85
+            -106 -151 -191 -191 -62 -30 -75 -32 -172 -32 -97 0 -110 2 -172 32 -130 61
+            -218 189 -226 326 -5 76 6 97 48 97 37 0 47 -15 59 -87 18 -113 69 -185 163
+            -232 146 -73 314 -17 387 131 44 86 44 170 0 256 -35 70 -71 105 -147 140 -55
+            25 -105 26 -239 6 -37 -5 -43 -3 -58 20 -16 24 -16 28 -2 50 26 39 89 56 197
+            53 83 -2 103 -6 162 -34z m-434 -125 c7 -7 12 -24 12 -38 0 -14 -5 -31 -12
+            -38 -7 -7 -24 -12 -38 -12 -14 0 -31 5 -38 12 -15 15 -15 61 0 76 15 15 61 15
+            76 0z m346 -107 c46 -31 66 -69 66 -131 0 -95 -55 -150 -150 -150 -37 0 -64 6
+            -84 19 -46 31 -66 69 -66 131 0 95 55 150 150 150 37 0 64 -6 84 -19z"/>
+            <path d="M1250 1055 c-26 -32 13 -81 48 -59 34 22 22 74 -18 74 -10 0 -23 -7
+            -30 -15z"/>
+            <path d="M104 968 c-21 -36 -76 -44 -96 -14 -4 6 -8 -206 -8 -471 l0 -483
+            1280 0 1280 0 0 483 c0 265 -4 477 -8 471 -20 -29 -71 -22 -97 13 -9 12 -26
+            -4 -85 -78 -128 -159 -280 -277 -485 -375 -196 -94 -375 -134 -605 -134 -230
+            0 -409 40 -605 134 -193 92 -355 215 -463 348 -104 129 -98 123 -108 106z"/>
+            </g>
+            </svg>
+
+            <p class = "heading">Our Vision</p>
+            <p class = "content">LT & Associates shall be a leader in providing high-quality services in the field of Audit and Assurance, Accounting, Tax and Business Advisory to domestic and international clients. The firm would have a presence in principal cities of India and would develop niche areas for the future growth of the firm.</p>
+          </div>
+
+          <div class = "quality-card">
+            <!-- Flag -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="256.000000pt" height="256.000000pt" viewBox="0 0 256.000000 256.000000"
+             preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+            fill="none" stroke="#ffffff" style = "stroke-width: 20">
+            <path d="M0 1384 l0 -1176 38 49 c21 26 181 233 355 460 286 371 321 413 351
+            419 19 3 43 1 53 -5 11 -5 62 -64 113 -131 51 -66 94 -119 95 -118 74 100 452
+            586 461 594 12 9 14 96 14 483 0 307 4 479 10 492 19 35 80 18 80 -23 0 -16
+            20 -17 271 -20 l271 -3 19 -24 c34 -42 25 -67 -55 -150 l-74 -76 74 -83 c79
+            -89 88 -113 53 -150 -19 -21 -27 -22 -157 -20 l-137 3 0 35 0 35 103 3 104 3
+            -66 70 c-87 92 -88 108 -6 193 33 35 60 66 60 69 0 4 -103 7 -230 7 l-230 0 0
+            -170 0 -170 75 0 c64 0 76 -3 85 -20 8 -14 8 -26 0 -40 -9 -17 -21 -20 -85
+            -20 l-75 0 0 -206 c0 -190 1 -207 19 -222 10 -10 233 -295 495 -635 l476 -619
+            0 1171 0 1171 -1280 0 -1280 0 0 -1176z"/>
+            <path d="M1047 794 l-477 -619 446 -5 c411 -5 448 -6 458 -22 8 -13 8 -23 0
+            -35 -10 -17 -57 -18 -721 -21 -702 -2 -709 -2 -731 18 l-22 21 0 -66 0 -65
+            1280 0 1280 0 0 65 0 66 -28 -21 c-27 -20 -38 -20 -486 -18 -424 3 -460 4
+            -470 20 -8 13 -8 23 0 35 10 17 45 18 453 21 302 1 441 6 441 13 0 9 -862
+            1134 -926 1208 l-20 23 -477 -618z"/>
+            <path d="M422 610 c-183 -236 -332 -432 -332 -435 0 -3 82 -5 183 -5 l182 0
+            243 315 c150 195 242 322 238 330 -8 22 -166 225 -175 225 -4 0 -157 -193
+            -339 -430z"/>
+            </g>
+            </svg>
+
+            <p class = "heading">Our Mission</p>
+            <p class = "content">To deliver services in a timely manner, to create value for our clients, to maintain our personal relationships with the clients that are the foundation of our practice, to provide an enjoyable learning experience and an opportunity for growth for all our team members, to grow but never to compromise on our values of honesty and integrity.</p>
+          </div>
+
+          <div class="quality-card">
+            <!-- target -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="256.000000pt" height="256.000000pt" viewBox="0 0 256.000000 256.000000"
+             preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+            fill="none" stroke="#fff" stroke-width = "20">
+            <path d="M1 1998 c1 -523 2 -557 16 -483 29 160 102 339 198 486 63 95 249
+            281 344 344 147 96 326 169 486 198 74 14 40 15 -482 16 l-563 1 1 -562z"/>
+            <path d="M1515 2543 c160 -29 339 -102 486 -198 95 -63 281 -249 344 -344 96
+            -147 169 -326 198 -486 14 -74 15 -40 16 483 l1 562 -562 -1 c-523 -1 -557 -2
+            -483 -16z"/>
+            <path d="M1066 2434 c-469 -85 -858 -477 -941 -948 -19 -112 -19 -298 0 -408
+            83 -479 473 -869 949 -953 113 -19 299 -19 412 0 476 84 866 474 949 953 19
+            110 19 296 0 408 -83 475 -474 866 -949 949 -109 19 -313 18 -420 -1z m394
+            -85 c87 -14 261 -72 329 -111 62 -34 171 -109 195 -134 33 -33 9 -94 -36 -94
+            -12 0 -44 17 -72 38 -108 82 -228 140 -366 179 -52 14 -100 18 -235 17 -156 0
+            -177 -2 -260 -28 -326 -100 -571 -345 -671 -671 -26 -84 -28 -102 -28 -265 0
+            -163 2 -181 28 -265 100 -326 345 -571 671 -671 84 -26 102 -28 265 -28 163 0
+            181 2 265 28 261 80 472 253 594 486 74 142 102 247 108 406 6 148 -4 223 -47
+            358 -27 82 -28 93 -14 113 16 26 64 32 82 10 14 -16 46 -105 69 -187 25 -93
+            25 -406 0 -500 -104 -383 -363 -661 -728 -783 -184 -62 -474 -62 -658 0 -167
+            55 -316 147 -436 268 -140 140 -236 308 -292 515 -25 93 -25 407 0 500 56 207
+            152 375 292 515 161 162 379 273 605 308 54 9 279 6 340 -4z m-142 -151 c8 -8
+            12 -48 12 -115 l0 -103 33 0 c94 0 274 -76 365 -154 29 -25 73 -69 98 -98 78
+            -91 154 -271 154 -365 l0 -33 103 0 c111 0 127 -6 127 -50 0 -44 -16 -50 -127
+            -50 l-103 0 0 -33 c0 -54 -28 -147 -69 -232 -68 -137 -179 -248 -316 -316 -85
+            -41 -178 -69 -232 -69 l-33 0 0 -103 c0 -111 -6 -127 -50 -127 -44 0 -50 16
+            -50 127 l0 103 -33 0 c-54 0 -147 28 -232 69 -137 68 -248 179 -316 316 -41
+            85 -69 178 -69 232 l0 33 -103 0 c-111 0 -127 6 -127 50 0 44 16 50 127 50
+            l103 0 0 33 c0 54 28 147 69 232 68 137 179 248 316 316 85 41 178 69 232 69
+            l33 0 0 103 c0 111 6 127 50 127 14 0 31 -5 38 -12z m840 -280 c7 -7 12 -24
+            12 -38 0 -35 -17 -50 -57 -50 -26 0 -36 6 -45 25 -18 40 3 75 45 75 18 0 38
+            -5 45 -12z"/>
+            <path d="M1160 1863 c-46 -8 -134 -44 -190 -78 -140 -85 -254 -252 -275 -404
+            l-7 -51 64 0 c70 0 88 -10 88 -50 0 -40 -18 -50 -88 -50 l-64 0 7 -51 c15
+            -105 82 -234 166 -318 84 -84 213 -151 318 -166 l51 -7 0 64 c0 70 10 88 50
+            88 40 0 50 -18 50 -88 l0 -64 51 7 c105 15 234 82 318 166 84 84 151 213 166
+            318 l7 51 -64 0 c-70 0 -88 10 -88 50 0 40 18 50 88 50 l64 0 -7 51 c-15 105
+            -82 234 -166 318 -84 84 -213 151 -318 166 l-51 7 0 -64 c0 -70 -10 -88 -50
+            -88 -40 0 -50 18 -50 87 0 69 1 68 -70 56z m224 -313 c66 -25 130 -85 159
+            -148 30 -65 30 -179 1 -243 -49 -105 -143 -164 -264 -164 -121 0 -215 59 -264
+            164 -29 64 -29 178 1 243 62 136 224 201 367 148z"/>
+            <path d="M1202 1439 c-122 -62 -133 -231 -21 -306 150 -99 337 61 259 222 -44
+            91 -151 129 -238 84z"/>
+            <path d="M1 563 l-1 -563 563 1 c522 1 556 2 482 16 -159 28 -341 103 -488
+            200 -94 61 -279 248 -342 342 -96 147 -169 326 -198 486 -14 74 -15 40 -16
+            -482z"/>
+            <path d="M2542 1044 c-23 -149 -100 -336 -197 -485 -63 -94 -248 -281 -342
+            -342 -147 -97 -329 -172 -488 -200 -74 -14 -40 -15 483 -16 l562 -1 0 560 c0
+            308 -1 560 -3 560 -2 0 -9 -34 -15 -76z"/>
+            </g>
+            </svg>
+
+            <p class = "heading">Our Objective</p>
+            <p class = "content">Upholding the highest level of professional standards and reputation for integrity, to the platform a culture of transparency and responsibility. strive to succeed by exceeding client expectations of affordability, quality,and time-bound delivery schedules, focusing on the continuous development and collaborative growth.</p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Question/Answer section -->
+  <div class = "qa-container">
+    <div class = "qa-mask"></div>
+    
+    <div class = "card-content">
+      <div class = "g-container">
+        <div class = "valign-wrapper" style = "min-height: 100vh">
+          <div>
+            <h2>Question/Answer</h2>
+            <div class = "qa-card-grid">
+              <h3>Who we are?</h3>
+              <p>We are a chartered accountant firm rendering comprehensive professional services, which includes audit, management consultancy, tax consultancy, accounting services, secretarial services etc. We offer our services across the country form our offices situated at Ghaziabad & Etawah.</p>
+            </div>
+            <div class = "qa-card-grid">
+              <h3 class = "forSmallScreen">Why choose us?</h3>
+              <p>We believe in ethical work and technical expertise. We keep ourselves updated with changes in accounting standards, laws, bills, businesses and professional development. We offer respective skills, share insights and develop ideas to meet the business requirements to prevent your time and money in searching the same.</p>
+              <h3 class = "forLargeScreen">Why choose us?</h3>
+            </div>
+            <div class = "qa-card-grid">
+              <h3>How we are different?</h3>
+              <p>We acquire the same knowledge and represent the same laws but what different we do is we listen to your requirements and assist the same with experience and considering the future aspects and consequences. We forsee every building brick of your business to make its foundation strong and unbreakable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Services -->
+  <div class="services-container">
+    <div class = "g-container">
+      <div class = "valign-wrapper" style = "min-height: 100vh">
+        <div>
+          <h2>Our Services</h2>
+          <div class = "services-card-grid">
+
+            <div class = "service-card">
+              <!-- <h4 class="card-number">1</h4> -->
+              <h5 class="card-title">Corporate Services</h5>
+              <p>Many a times lack of proper documentation or record can prove to be very costly for a company. Our outsourced secretarial services ensure that companies comply with all legal requirements relating to the Companies Act and the Foreign Exchange Management Act (FEMA).</p>
+            </div>
+
+            <div class = "service-card">
+              <!-- <h4 class="card-number">2</h4> -->
+              <h5 class="card-title">Audit & Assurance Services</h5>
+              <p>Our assurance services include Statutory audit, Tax audit, Special audits and Investigations. Our Assurance assignments are conducted in accordance of the engagement standards issued by the ICAI.</p>
+            </div>
+
+            <div class="service-card">
+              <!-- <h4 class="card-number">3</h4> -->
+              <h5 class="card-title" style = "padding:0">Book Keeping & Outsourcing</h5>
+              <p>Book keeping is an art of identifying, approving, sorting and recording company's financial transactions in a custom that they can be retrieved and presented higher management reporting. At LT & Associates our bookkeeping and outsourcing services aims at cost reduction.</p>
+            </div>
+
+            <div class="service-card">
+              <!-- <h4 class="card-number">4</h4> -->
+              <h5 class="card-title">Direct Taxation</h5>
+              <p>Direct tax consultancy together with innovative tax efficient strategies, provided by us form an integral part of viable business decisions. These help our clients attain the desired goals.</p>
+            </div>
+
+            <div class="service-card">
+              <!-- <h4 class="card-number">5</h4> -->
+              <h5 class="card-title">Indirect Taxation</h5>
+              <p>Indirect taxes are the kind of taxes that are levied on Goods & Services. In India, indirect taxes are levied in form of Goods & Service Tax (GST) & Customs Duty. Every business organization whether small or big is required to comply with the legal requirements under those laws for the smooth running of their businesses. </p>
+            </div>
+
+            <div class="service-card">
+              <!-- <h4 class="card-number">6</h4> -->
+              <h5 class="card-title">Risk Advisory Services</h5>
+              <p>We provide Risk Advisory services to assist clients to enhance their risk management and stakeholder conformance while providing the foundation to achieve greater business performance. Our Risk Management services help in better identifying, measuring and managing risk and enhancing the reliability of control systems and procedures.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "reach-container">
+    <div class = "reach-mask"></div>
+    <div class = "reach-content">
+      <div class = "g-container">
+        <div class = "valign-wrapper" style = "min-height: 100vh">
+          <div style = "height: inherit">
+            <h2>Reach Us</h2>
+            <div class = "maps-grid">
+  
+              <div class = "map-card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1237.8594974965267!2d77.4442831677663!3d28.653868025693104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1dd05698e4f%3A0xf5d6016d6aa5d1ec!2sRakesh+Marg%2C+Nehru+Nagar+III%2C+Nehru+Nagar%2C+Ghaziabad%2C+Uttar+Pradesh+201001!5e0!3m2!1sen!2sin!4v1522183126575" frameborder="0" allowfullscreen></iframe>
+                <p class = "map-address-header">Head Office - Ghaziabad</p>
+                <p class = "map-address">||| F1/7 Nehru Nagar, Rakesh Marg,</p>
+                <p class = "map-address">Ghaziabad - 20101</p>
+              </div>
+  
+              <div class = "map-card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14247.932256507565!2d79.0231367290906!3d26.776809780002605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3975e077f043406f%3A0x9e65dc56c559925a!2sNaurangabad%2C+Chogurjee+Nagar%2C+Etawah%2C+Uttar+Pradesh+206001!5e0!3m2!1sen!2sin!4v1522183927925" frameborder="0" allowfullscreen></iframe>
+                <p class = "map-address-header">Branch Office - Etawah</p>
+                <p class = "map-address">Gali No. 3 Khatkhata Baba Colony,</p>
+                <p class = "map-address">Etawah - 206001</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "contactus-container">
+    <div class = "g-container">
+      <div class = "valign-wrapper" style = "min-height: 90vh">
+        <div class = "form-cover">
+          <h2>Contact Us</h2>
+          <div class = "row" style = "width: 100%">
+            <form class = "col s12">
+              <div class = "row">
+                <div class = "input-field col s12 m6">
+                  <i class = "far fa-user-circle prefix"></i>
+                  <input id = "person" type = "text" class = "validate" name = "name">
+                  <label for = "person">Name</label>
+                </div>
+                <div class = "input-field col s12 m6">
+                  <i class = "fas fa-phone prefix"></i>
+                  <input id = "phone" type = "number" class = "validate" name = "phone">
+                  <label for = "phone">Phone</label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "input-field col s12">
+                  <i class = "far fa-envelope prefix"></i>
+                  <input type = "email" id = "email" class = "validate" name = "email">
+                  <label for = "email">Email</label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "input-field col s12">
+                  <i class = "far fa-comments prefix"></i>
+                  <textarea id="message" class="materialize-textarea" name = "message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class  = "input-field col s12">
+                  <button class = "mybtn" type = "submit">Submit <div></div></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "footer">
+    <div class = "g-container">
+      <div class = "links-grid">
+        <div>
+          <h5>About Us</h5>
+          <ul>
+            <li><a href = "html/aboutus/aboutfirm.html">About Us</a></li>
+            <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+            <li><a href = "html/aboutus/team.html">Our Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+            <li><a href = "html/services/aduitassurance.html">Audit & Assurance Services</a></li>
+            <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+            <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+            <li><a href = "html/services/other.html">Other Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Useful Resources</h5>
+          <ul>
+            <li><a href = "http://www.mca.gov.in/">Ministry of Corporate Affairs</a></li>
+            <li><a href = "https://www.incometaxindia.gov.in">Income Tax</a>
+            <li><a href = "https://www.rbi.org.in/">Reserve Bank of India</a></li>
+            <li><a href = "http://dgft.gov.in/">Directorate General of Foreign Trade</a></li>
+            <li><a href = "http://www.cbec.gov.in/">Central Board of Excise and Customs</a></li>
+          </ul>
+        </div>
+        <div class = "address-footer-section">
+          <h5>Contact information</h5>
+          <p>Head Office: ||| F1/7 Nehru Nagar, Rakesh Marg, Ghaziabad - 201001</p>
+          <p>Branch Office: Gali No. 3 Khatkahata Baba Colony, Etawah - 206001</p>
+          <p>Email: ltassociates@outlook.in</p>
+          <p>Phone: 9717891049 / 9716616952</p>
+        </div>
+      </div>
+
+      <div class = "footer-grid-second">
+        <div class = "copyright-box">
+          <p class="copyright">&copy; LT & ASSOCIATES, All rights reserved</p>
+        </div>
+        <div class = "followus-box">
+          <a href = "https://www.facebook.com/LT-Associates-2030840253850304/" class = "footer-social-links">
+            <i class = "fab fa-facebook"></i>
+          </a>
+          <a href = "" class = "footer-social-links">
+            <i class = "fab fa-twitter"></i>
+          </a>
+          <a href = "https://www.linkedin.com/company/lt-associates/" class = "footer-social-links">
+            <i class = "fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "fixed-action-btn">
+    <a class = "btn-floating white btn-large">
+      <i class = "fas fa-share-alt" style = "color:black"></i>
+    </a>
+
+    <ul>
+      <li>
+        <div data-network="facebook" class = "btn-floating st-custom-button waves-effect waves-light facebook">
+          <i class = "fab fa-facebook-f"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="twitter" class = "btn-floating st-custom-button waves-effect waves-light twitter">
+          <i class = "fab fa-twitter"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="linkedin" class = "btn-floating st-custom-button waves-effect linkedin waves-light">
+          <i class = "fab fa-linkedin-in"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="whatsapp" class = "btn-floating st-custom-button waves-effect waves-light">
+          <i class = "fab fa-whatsapp"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="googleplus" class = "btn-floating st-custom-button waves-effect google waves-light">
+          <i class = "fab fa-google-plus-g"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="index.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "js/jquery-drawsvg.js"></script>
+  <script src = "index.js"></script>
 </body>
 
 </html>

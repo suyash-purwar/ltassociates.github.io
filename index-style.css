@@ -42,12 +42,14 @@
   font-size: 70px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+  position: relative;
   text-transform: uppercase;
 }
 
 .main-carousel .carousel-item .carousel-text div p {
   color: white;
   font-style: italic;
+  position: relative;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -135,7 +137,7 @@ nav.contact-nav {
 }
 
 .intro-container p.intro-content {
-  font-size: 18px;
+  font-size: 17px;
   text-align: justify;
   top: -15px;
   position: relative;
@@ -150,18 +152,383 @@ nav.contact-nav {
   top: -10px;
 }
 
+.intro-container .mybtn {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Styles for Qualities Section  */
+
+.qualities-container {
+  background-color: rgb(22, 34, 49);
+  color: white;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  padding: 30px 20px;
+}
+
+.qualities-container:before {
+  position: absolute;
+  content: "";
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(-4deg);
+  background: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.qualities-container:after {
+  position: absolute;
+  content: "";
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  background: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.qualities-container .quality-container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  grid-gap: 60px;
+  position: relative;
+}
+
+.qualities-container .quality-container-grid .quality-card {
+  margin: 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
 
 
+.qualities-container .quality-container-grid .quality-card svg {
+  width: 60%;
+  height: 250px;
+  position: relative;
+}
+
+.qualities-container .quality-container-grid .quality-card .heading {
+  font-size: 25px;
+  text-align: center;
+}
+
+.qualities-container .quality-container-grid .quality-card .content {
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* Styles for QA Section */
+
+.qa-container {
+  background-image: url('images/things/quality-container-img.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0%;
+  z-index: -2;
+}
+.qa-container .card-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
 
 
+.qa-container .qa-mask {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  top: 0;
+  z-index:-1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(22, 34, 49, .7);
+}
+
+.qa-container h2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -10px;
+}
+
+.qa-container .qa-card-grid {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  color: white;
+}
+
+.qa-container .qa-card-grid:nth-child(odd) {
+  grid-template-columns: 8fr 4fr;
+}
+
+.qa-container .qa-card-grid:nth-child(even) {
+  grid-template-columns: 4fr 8fr;
+}
+
+.qa-container .qa-card-grid h3{
+  text-align: center;
+}
+
+.qa-container h3.forSmallScreen {
+    display: none;
+  }
+
+.qa-container .qa-card-grid p {
+  font-size: 17px;
+}
 
 
+/* Styles for Our Services Section */
+
+.services-container {
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+  padding: 0 20px;
+  background: white;
+  z-index: 1;
+}
+
+.services-container:after {
+  position: absolute;
+  content: "";
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  width: 100%;
+  height: 100%;
+  background: inherit;
+}
+
+.services-container h2 {
+  text-align: center;
+}
+
+.services-container .services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  grid-gap: 20px;
+}
+
+.services-container .services-card-grid .service-card h5 {
+  line-height: normal;
+  font-size: 23px;
+}
+
+.services-container .services-card-grid .service-card p {
+  font-size: 17px;
+}
+
+/* Styles for Reach Us Section */
+.reach-container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  position: relative;
+  background-image: url('images/things/reachus.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+.reach-container .reach-mask {
+  background-color: rgba(22, 34, 49, 0.8);
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.reach-content {
+  z-index: -3;
+  padding: 0 20px;
+}
+.reach-container div {
+  width: 100%;
+}
+.reach-container h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 90px;
+}
+.reach-container .maps-grid {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-gap: 90px;
+}
+.reach-container .maps-grid .map-card > *{
+  color: white;
+  text-align: center;
+}
+.reach-container .maps-grid .map-card iframe {
+  width: 100%;
+  height: 40vh;
+  border: 9px solid rgb(118, 118, 118, .3);
+  padding: 10px;
+}
+
+.reach-container .maps-grid .map-card .map-address-header {
+  font-size: 20px;
+}
+
+.reach-container .maps-grid .map-card .map-address {
+  font-size: 17px;
+}
 
 
+/* Styles for Contact Us Section */
+.contactus-container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.contactus-container {
+  text-align: center;
+}
+
+.contactus-container .form-cover {
+  width: 100%;
+}
+
+.contactus-container h2 {
+  padding-bottom: 40px;
+}
 
 
+.contactus-container form {
+  padding: 0 30px !important;
+}
 
+.input-field label {
+  color: rgb(22, 34, 49);
+}
 
+.input-field input[type=text]:focus + label {
+  color: rgb(22, 34, 49);
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(22, 34, 49);
+  box-shadow: 0 1px 0 0 rgb(22, 34, 49);
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid rgb(22, 34, 49);
+  box-shadow: 0 1px 0 0 rgb(22, 34, 49);
+}
+
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red;
+}
+
+.input-field .prefix.active {
+  color: rgb(22, 34, 49);
+}
+    
+/* Styles for footer section */
+.footer {
+  background-color: rgb(22, 34, 49);
+  padding: 10px 0;
+  top: 50px;
+  position: relative;
+  width: 100%;
+  position: relative;
+  min-height: 60vh;
+}
+
+.footer:before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom left;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.footer .links-grid {
+  display: grid;
+  padding: 0 30px;
+  grid-template-columns: repeat(4, 3fr);
+  grid-gap: 20px;
+}
+
+.footer .links-grid div h5 {
+  bottom: 40px;
+}
+
+.footer .links-grid div ul li {
+  margin: 7px 0;
+}
+
+.footer .links-grid div ul li a {
+  color: white;
+  font-size: 15px;
+}
+
+.footer .links-grid div > * {
+  color: white;
+}
+
+.footer-grid-second {
+  display: grid;
+  padding: 0 30px;
+  grid-template-columns: 6fr 6fr;
+}
+
+.footer-grid-second .copyright-box p.copyright {
+  font-size: 15px;
+  color: white;
+}
+
+.footer-grid-second .followus-box a.footer-social-links {
+  margin: 0 10px;
+  font-size: 23px;
+  float: right;
+  color: white;
+  top: 13px;
+  position: relative;
+}
+
+.footer-grid-second .followus-box a.footer-social-links:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 
 
@@ -201,8 +568,79 @@ nav.contact-nav {
     font-size: 40px;
   }
 
-  .intro-container .intro-content {
-    padding: 0 30px;
+  /* ***** Styles for Qualities Section ***** */
+  .qualities-container .quality-container-grid{
+    grid-template-columns: 12fr;
+    padding:20px 0px;
+  }
+
+  /* **** Styles for Question/Answer **** */
+  .qa-container .card-content {
+    padding: 20px
+  }
+  .qa-container h2 {
+    font-size: 40px;
+  }
+  .qa-container .qa-card-grid {
+    display: block;
+    position: relative;
+  }
+  .qa-container .qa-card-grid h3 {
+    text-align: left;
+    font-size: 26px;
+  }
+  .qa-container .qa-card-grid h3:before {
+    content: "Q";
+    font-size: 40px !important;
+    padding-right: 10px;
+    /*position: absolute;*/
+  }
+  .qa-container h3.forLargeScreen {
+    display: none;
+  }
+  .qa-container h3.forSmallScreen {
+    display: block;
+  }
+  
+  /* Styles for Our Services Section */
+  .services-container h2 {
+    font-size: 40px;
+  }
+
+  .services-container .services-card-grid {
+    grid-template-columns: 12fr;
+  }
+
+  .services-container .services-card-grid .service-card h5 {
+    font-size: 26px;
+    text-decoration: underline;
+  }
+
+  /* Styles for Reach Us Section */
+  .reach-container .reach-content {
+    padding: 20px;
+  }
+  .reach-container h2 {
+    font-size: 40px;
+  }
+  .reach-container .maps-grid {
+    grid-template-columns: 12fr;
+    grid-gap: 10px;
+  }
+
+  /* Styles for Contact Us Section */
+  .contactus-container h2 {
+    font-style: 40px;
+  }
+
+  /* Styles for footer section */
+  .footer .links-grid {
+    grid-template-columns: 6fr 6fr;
+  }
+
+  .footer .links-grid div {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -236,7 +674,7 @@ nav.contact-nav {
 @media screen and (max-width: 480px) {
   /* ***** Styles for carousel ****** */
   .main-carousel .carousel-item .carousel-text div {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .main-carousel .carousel-item .carousel-text div h1 {
     font-size: 40px;
@@ -245,8 +683,41 @@ nav.contact-nav {
     font-size: 16px;
   }
 
+  /* Styles for Introductory Para */
+  .intro-container {
+    margin-bottom: 40px;
+  }
+
   /* ***** Styles for Contact Navbar ****** */
   nav.contact-nav {
     display: none;
+  }
+
+  /* Styles for footer section */
+  .footer .links-grid {
+    grid-template-columns: 12fr;
+  }
+
+  .footer .links-grid div {
+    margin: 0px;
+    text-align: left;
+  }
+
+  .footer .footer-grid-second {
+    border-top: 1px solid white;
+    grid-template-columns: 12fr;
+  }
+
+  .footer .footer-grid-second .copyright-box p.copyright {
+    text-align: center;
+  }
+
+  .footer .footer-grid-second .followus-box a {
+    top: 0;
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+    margin: 0;
+    text-align: center;
   }
 }
