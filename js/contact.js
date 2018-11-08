@@ -83,6 +83,14 @@ document.querySelector('#contactus-form').addEventListener('submit', function(e)
       }
     }());
 
-    // Saving to database
+    // Saving in database
+    database.collection("messages").add(formData)
+    .then(doc => {
+      document.getElementById("error-info").innerHTML = "";
+      document.getElementById("success-info").innerHTML = "Congrats! Your messages is sent";
+      setTimeout(() => {
+        document.getElementById("success-info").innerHTML = "";
+      }, 4000);
+    }).catch(error => console.log(error));
   }
 });
