@@ -1,0 +1,72 @@
+.ethos-container {
+    width: 100%;
+    position: relative;
+    padding: 50px 30px;
+}
+
+.ethos-container .etho-grid {
+    display: grid;
+    grid-gap: 30px;
+    padding: 30px 0px;
+}
+
+.ethos-container .etho-grid:nth-child(odd) {
+    grid-template-columns: 3fr 9fr;
+}
+
+.ethos-container .etho-grid:nth-child(even) {
+    grid-template-columns: 9fr 3fr;
+}
+
+.ethos-container .etho-grid img.etho-icon {
+    width: 100%;
+    position: relative;
+}
+
+.ethos-container .etho-grid img.show-on-small-med {
+    display: none;
+}
+
+.ethos-container .etho-grid img.show-on-large {
+    display: block;
+}
+
+.ethos-container .etho-grid div p {
+    font-size: 17px;
+}
+
+.ethos-container .etho-grid div h3 {
+    font-size: 35px;
+}
+
+
+/* 
+******
+******
+Tablet Styles
+******
+******
+*/
+
+@media screen and (max-width: 760px) {
+    .ethos-container .etho-grid img.show-on-small-med {
+        display: block;
+    }
+    
+    .ethos-container .etho-grid img.show-on-large {
+        display: none;
+    }
+
+    .ethos-container .etho-grid {
+        grid-template-columns: 12fr !important;
+    }
+
+    .ethos-container .etho-grid img.etho-icon {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .ethos-container .etho-grid div > * {
+        text-align: center;
+    }
+}
