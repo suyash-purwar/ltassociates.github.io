@@ -1,0 +1,23 @@
+.content {
+    padding: 50px 30px;
+}
+
+.content h3 {
+    font-size: 35px;
+}
+
+.content p,
+.content li {
+    font-size: 17px;
+}
+
+.content ul li{
+    list-style-position: outside;
+    list-style-type: circle !important;
+}
+
+.content ul ul li {
+    list-style-position: inside;
+    padding-left: 10px;
+    list-style-type: disc !important;
+}

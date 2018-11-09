@@ -11,7 +11,7 @@
   <!-- My CSS Files -->
   <link rel="stylesheet" href="../../css/global.css"> <!-- This CSS file is common in all pages -->
   <link rel="stylesheet" href="../../css/innerpage-global.css">
-  <link rel="stylesheet" href="../../css/ethos.css">
+  <link rel="stylesheet" href="../../css/tester.css">
 
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -21,21 +21,21 @@
 
 <body>
   <ul id="aboutus-dropdown" class="dropdown-content">
-    <li><a href = "team.html">Our Team</a></li>
-    <li><a href = "ethos.html">Our Ethos</a></li>
-    <li><a href = "aboutfirm.html">About the firm</a></li>
+    <li><a href = "../aboutus/team.html">Our Team</a></li>
+    <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+    <li><a href = "../aboutus/aboutfirm.html">About the firm</a></li>
   </ul>
   <ul id="taxation-dropdown" class="dropdown-content">
-    <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
-    <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
+    <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
+    <li><a href = "directtaxation.html">Direct Taxation</a></li>
   </ul>
   <ul id="services-dropdown" class="dropdown-content">
-    <li><a href = "../services/corporate.html">Corporate Services</a></li>
-    <li><a href = "../services/aduitassurance.html">Audit & Assurance Services</a></li>
-    <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
+    <li><a href = "corporate.html">Corporate Services</a></li>
+    <li><a href = "aduitassurance.html">Audit & Assurance Services</a></li>
+    <li><a href = "bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
     <li><a href = "#!" class = "sub-dropdown" data-target="taxation-dropdown">Taxation</a></li>
-    <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-    <li><a href = "../services/other.html">Other Services</a></li>
+    <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+    <li><a href = "other.html">Other Services</a></li>
   </ul>
   <div id="large-screen-nav">
     <div class="navbar-fixed">
@@ -82,26 +82,26 @@
     <li id = "aboutus-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-aboutus')"><a href = "#!">About Us</a></li>
     <li id = "dropdown-aboutus">
       <ul>
-        <li><a href = "team.html">Our Team</a></li>
-        <li><a href = "ethos.html">Our Ethos</a></li>
-        <li><a href = "aboutfirm.html">About the firm</a></li>
+        <li><a href = "../aboutus/team.html">Our Team</a></li>
+        <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+        <li><a href = "../aboutus/aboutfirm.html">About the firm</a></li>
       </ul>
     </li>
     <li id = "dropdown-services-trigger" onclick = "toggleAboutusDropdown('dropdown-services')"><a href = "#!">Services</a></li>
     <li id = "dropdown-services">
       <ul>
-        <li><a href = "../services/corporate.html">Corporate Services</a></li>
-        <li><a href = "../services/auditassurance.html">Audit & Assurance Services</a></li>
-        <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+        <li><a href = "corporate.html">Corporate Services</a></li>
+        <li><a href = "auditassurance.html">Audit & Assurance Services</a></li>
+        <li><a href = "bookkeeping.html">Book Keeping and Outsourcing</a></li>
         <li id = "taxation-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-taxation')">Taxation</li>
         <li id = "dropdown-taxation">
           <ul>
-            <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
-            <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
           </ul>
         </li>
-        <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-        <li><a href = "../services/other.html">Other Services</a></li>
+        <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+        <li><a href = "other.html">Other Services</a></li>
       </ul>
     </li>
     <li><a href = "../menu/news.html">News</a></li>
@@ -135,42 +135,65 @@
     <div class = "header-mask"></div>
     <div class = "valign-wrapper header-subcontainer">
       <div>
-        <h2 class="primary-heading">Our Ethos</h2>
+        <h2 class="primary-heading">Corporate Services</h2>
         <p>
-          <a href = "../../index.html" class = "root-link">Home</a><span class = "navigation-structure-slash">/</span><a href = "ethos.html">Ethos</a>
+          <a href = "../../index.html" class = "root-link">Home</a><span class = "navigation-structure-slash">/</span><a href = "corporate.html">Corporate Services</a>
         </p>
       </div>
     </div>
   </div>
 
 
-  <div class = "ethos-container">
+  <div class = "content">
     <div class = "g-container">
-      <div class = "etho-grid">
-        <img class = "etho-icon" src = "../../images/icons/vision.png">
-        <div>
-          <h3>Our Vision</h3>
-          <p>LT & Associates shall be a leader in providing high-quality services in the field of Audit and Assurance, Accounting, Tax and Business Advisory to domestic and international clients. The firm would have a presence in principal cities of India and would develop niche areas for the future growth of the firm.</p>
-        </div>
-      </div>
-  
-      <div class = "etho-grid">
-        <img class = "etho-icon show-on-small-med" src = "../../images/icons/mission.png">
-        <div>
-          <h3>Our Mission</h3>
-          <p>To deliver services in a timely manner, to create value for our clients, to maintain our personal relationships with the clients that are the foundation of our practice, to provide an enjoyable learning experience and an opportunity for growth for all our team members, to grow but never to compromise on our values of honesty and integrity.</p>
-        </div>
-        <img class = "etho-icon show-on-large" src = "../../images/icons/mission.png">
-      </div>
-  
-      <div class = "etho-grid">
-        <img class = "etho-icon" src = "../../images/icons/objective.png">
-        <div>
-          <h3>Our Objective</h3>
-          <p>Upholding the highest level of professional standards and reputation for integrity, to the platform a culture of transparency and responsibility. strive to succeed by exceeding client expectations of affordability, quality,and time-bound delivery schedules, focusing on the continuous development and collaborative growth.</p>
-        </div>
-      </div>
+      <h3>Corporate Services</h3>
 
+      <p>Many a time’s lacks of proper documentation or record can prove to be very costly for a company. Our outsourced secretarial services ensure that companies comply with all legal requirements relating to the Companies Act and the Foreign Exchange Management Act (FEMA) so that the companies are always on the right side of the law.</p>
+
+      <p>Our services include:</p>
+
+      <ul>
+        <li>
+          <b>Incorporation Services:</b> Incorporation is the legal process used to form a corporate entity or company. A corporation is a separate legal entity from its owners, with its own rights and obligations.
+          <br>
+          Incorporation has many advantages for a business and its owners, including protection of the owner's assets, because the company is liable for its own debts. Other advantages include the easy transfer of the business to another party through the sale of shares; the possibility of tax planning for the owner through the use of a lower tax rate than ones for personal income; and access to financing for business activities through, among others, the sale of stock.
+          <br>
+          We at LT & Associates provide services in respect of incorporation of domestic companies, Wholly Owned Subsidiaries, LLP’s, JV’s, Branch and Liaison offices.
+        </li>
+        <li>
+          <b>Compliance Services:</b> Every company is required to comply with the requirements under various laws prevailing in the country where the company is registered for running its business smoothly. 
+          <br>
+          Below is the list of some of the compliances required under Company Act.
+
+          <br><br>
+
+          <ul>
+            <li>
+              <b>Board Meetings:</b> Every company is required to hold minimum no. of a board meeting in a year at definite intervals to consider the policy issues and major problems.
+            </li>
+
+            <li>
+              <b>Annual General Meeting (AGM):</b> This is a shareholders meeting that needs to be held every year. Approval of financial statements, declaration of dividends, the appointment of auditors, etc. is the primary agenda for this meeting. AGM needs to be held in the city where the registered office of the company is situated.
+            </li>
+
+            <li>
+              <b>Annual Filling of Forms:</b> There are a number of annual forms that need to be filed beside the annual financials. The information is quite detailed and talks about shareholdings, directors, financials, etc. All these forms are required to be certified by a practicing Chartered Accountant or practicing Company Secretary.
+            </li>
+
+            <li>
+              <b>Maintenance of Statutory Register & Minutes Book: </b> A number of registers are required to be maintained, such as‐ Register of Member, Register of Directors, Register of Contracts, Register of Charges, etc.
+            </li>
+          </ul>
+          
+          <br>
+
+          We at LT & Associates assist our clients in complying with the above-mentioned requirements under the Companies Act along with the filing of documents with the RBI under FEMA(wherever required).
+        </li>
+
+        <li>
+          <b>Advisory:</b> We also assist our clients in providing opinions on matters related to Companies Act and FEMA.
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -219,21 +242,21 @@
         <div>
           <h5>About Us</h5>
           <ul>
-            <li><a href = "aboutfirm.html">About Us</a></li>
-            <li><a href = "ethos.html">Our Ethos</a></li>
-            <li><a href = "team.html">Our Team</a></li>
+            <li><a href = "../aboutus/aboutfirm.html">About Us</a></li>
+            <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+            <li><a href = "../aboutus/team.html">Our Team</a></li>
           </ul>
         </div>
         <div>
           <h5>Services</h5>
           <ul>
-            <li><a href = "../services/corporate.html">Corporate Services</a></li>
-            <li><a href = "../services/aduitassurance.html">Audit & Assurance Services</a></li>
-            <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
-            <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
-            <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
-            <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-            <li><a href = "../services/other.html">Other Services</a></li>
+            <li><a href = "corporate.html">Corporate Services</a></li>
+            <li><a href = "aduitassurance.html">Audit & Assurance Services</a></li>
+            <li><a href = "bookkeeping.html">Book Keeping and Outsourcing</a></li>
+            <li><a href = "directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+            <li><a href = "other.html">Other Services</a></li>
           </ul>
         </div>
         <div>
