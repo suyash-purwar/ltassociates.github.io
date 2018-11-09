@@ -249,6 +249,52 @@ a {
   display: none;
 }
 
+/* ****** Styles for contact navbar *******  */
+
+nav.contact-nav {
+  background-color: rgb(33, 33, 33, .6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  min-height: 60px;
+  /* z-index: -1; */
+}
+
+.contact-nav a {
+  margin: 20px;
+  top: -4px;
+  position: relative;
+  font-family: Raleway;
+}
+
+.contact-nav .social-links {
+  float: right;
+  top: -20px;
+  position: relative;
+}
+
+.contact-nav .social-links:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.contact-nav a i {
+  font-size: 17px;
+  padding: 0 8px 0 0;
+}
+
+.contact-nav .slash {
+  font-size: 25px;
+  position: relative;
+  font-weight: lighter;
+  top: -2px;
+  display: inline-block;
+  transform: skewX(-20deg);
+}
+
 /* Styles for footer section */
 .footer {
   background-color: rgb(22, 34, 49);
@@ -391,11 +437,11 @@ a {
   }
 
   .sidenav .background img {
-     width: 90%;
-     top: 10px;
-     position: relative;
-     display: block;
-     margin: auto;
+    width: 90%;
+    top: 10px;
+    position: relative;
+    display: block;
+    margin: auto;
   }
 
   .sidenav #dropdown-aboutus, .sidenav #dropdown-services, #dropdown-services #dropdown-taxation {
@@ -425,9 +471,15 @@ a {
     margin-left: 50px;
   }
 
-   #dropdown-services #dropdown-taxation ul {
-     margin-left: 20px;
-   }
+  #dropdown-services #dropdown-taxation ul {
+    margin-left: 20px;
+  }
+
+  /* ***** Styles for Contact Navbar ****** */
+  nav.contact-nav {
+    display: none;
+  }
+
 
   /* Styles for footer section */
   .footer .links-grid {
@@ -464,6 +516,11 @@ a {
 /* Styles for main nav */
 @media screen and (max-width: 480px) {
   nav.main-nav {
+    display: none;
+  }
+
+  /* ***** Styles for Contact Navbar ****** */
+  nav.contact-nav {
     display: none;
   }
 

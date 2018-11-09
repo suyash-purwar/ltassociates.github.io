@@ -1,0 +1,102 @@
+/* Styles for aboutus section */
+.aboutus-container {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.aboutus-container .aboutus-subcontainer {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.aboutus-container .aboutus-subcontainer div {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.aboutus-container .aboutus-subcontainer div > * {
+    text-align: center;
+}
+
+.aboutus-container .aboutus-subcontainer div p.subheading {
+    color: rgb(161, 161, 161);
+    font-style: italic;
+    font-size: 22px;
+}
+
+.aboutus-container .aboutus-subcontainer div p.aboutus-content {
+    font-size: 17px;
+}
+
+/* Styles for Why Us Container */
+.whyus-container {
+    background-image: url('../images/things/choose-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+.whyus-container .whyus-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.whyus-container .whyus-content {
+    padding: 70px 30px;
+}
+
+.whyus-container h3 {
+    text-align: center;
+    color: white;
+}
+
+.whyus-container p{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*
+******
+******
+Tablet Styles
+******
+****** 
+*/
+
+@media screen and (max-width: 760px) {
+
+}
+
+
+/* 
+*****
+*****
+Mobile Devices
+*****
+*****
+ */
+
+@media screen and (max-width: 480px) {
+    /* About Us Section */
+    .aboutus-container .aboutus-subcontainer h1 {
+        font-size: 40px;
+    }
+}
+

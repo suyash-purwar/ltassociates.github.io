@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LT&Associates</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- My CSS Files -->
+  <link rel="stylesheet" href="../../css/global.css"> <!-- This CSS file is common in all pages -->
+  <link rel="stylesheet" href="../../css/innerpage-global.css">
+  <link rel="stylesheet" href="../../css/aboutus.css">
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- ShareThis API -->
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ac4f51b003b52001341b3d4&product=custom-share-buttons"></script>
+</head>
+
+<body>
+  <ul id="aboutus-dropdown" class="dropdown-content">
+    <li><a href = "html/aboutus/team.html">Our Team</a></li>
+    <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+    <li><a href = "html/aboutus/aboutfirm.html">About the firm</a></li>
+  </ul>
+  <ul id="taxation-dropdown" class="dropdown-content">
+    <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+    <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
+  </ul>
+  <ul id="services-dropdown" class="dropdown-content">
+    <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+    <li><a href = "html/services/aduitassurance.html">Audit & Assurance Services</a></li>
+    <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
+    <li><a href = "#!" class = "sub-dropdown" data-target="taxation-dropdown">Taxation</a></li>
+    <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+    <li><a href = "html/services/other.html">Other Services</a></li>
+  </ul>
+  <div id="large-screen-nav">
+    <div class="navbar-fixed">
+      <nav class="main-nav">
+        <a href = "../../index.html" class = "logo">
+          <img src = "../../images/logos/logo.png">
+        </a>
+
+        <a class = "menu" href = "html/menu/contact.html">Contact Us</a>
+        <a class = "menu" href = "html/menu/news.html">News</a>
+        <a href = "#!" class = "dropdown-trigger menu" data-target = "services-dropdown">Services</a>
+        <a class = "aboutus-dropdown dropdown-trigger menu" href = "#!" data-target = "aboutus-dropdown">About Us</a>
+        <a class = "menu" href = "index.html">Home</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Sidebar triggering nav -->
+  <div class = "navbar-fixed"  id = "small-screen-nav">
+    <nav class = "sidenav-triggering-nav">
+      <a href = "#!" data-target="slide-out" class="sidenav-trigger">
+        <i class = "fas fa-bars"></i>
+      </a>
+      <a href = "https://www.facebook.com/LT-Associates-2030840253850304/" class = "sidenav-social-links">
+        <i class = "fab fa-facebook"></i>
+      </a>
+      <a href = "" class = "sidenav-social-links">
+        <i class = "fab fa-twitter"></i>
+      </a>
+      <a href = "https://www.linkedin.com/company/lt-associates/" class = "sidenav-social-links">
+        <i class = "fab fa-linkedin-in"></i>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Sidenav for small and medium sized screens -->
+  <ul id = "slide-out" class = "sidenav">
+    <li><div class = "user-view">
+      <div class = "background">
+        <img src = "../../images/logos/logo.png">
+      </div>
+    </div></li>
+    <li><a href = "index.html">Home</a></li>
+    <li id = "aboutus-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-aboutus')"><a href = "#!">About Us</a></li>
+    <li id = "dropdown-aboutus">
+      <ul>
+        <li><a href = "html/aboutus/team.html">Our Team</a></li>
+        <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+        <li><a href = "html/aboutus/aboutfirm.html">About the firm</a></li>
+      </ul>
+    </li>
+    <li id = "dropdown-services-trigger" onclick = "toggleAboutusDropdown('dropdown-services')"><a href = "#!">Services</a></li>
+    <li id = "dropdown-services">
+      <ul>
+        <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+        <li><a href = "html/services/auditassurance.html">Audit & Assurance Services</a></li>
+        <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+        <li id = "taxation-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-taxation')">Taxation</li>
+        <li id = "dropdown-taxation">
+          <ul>
+            <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+          </ul>
+        </li>
+        <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+        <li><a href = "html/services/other.html">Other Services</a></li>
+      </ul>
+    </li>
+    <li><a href = "html/menu/news.html">News</a></li>
+    <li><a href = "html/menu/contact.html">Contact Us</a></li>
+  </ul>
+
+  <nav class="contact-nav">
+    <a href = "#">
+        <i class = "fas fa-phone"></i>
+        <span>9717891049 / 9716616952</span>
+      </a>
+    <span class = "slash">/</span>
+    <a href = "#">
+        <i class = "fas fa-envelope"></i>
+        <span>ltassociates@outlook.in</span>
+      </a>
+    <a class = "social-links" href = "https://www.facebook.com/LT-Associates-2030840253850304/">
+        <i class = "fab fa-facebook"></i>
+      </a>
+    <span class = "slash social-links">/</span>
+    <a class = "social-links" href = "">
+        <i class = "fab fa-twitter"></i>
+      </a>
+    <span class = "slash social-links">/</span>
+    <a class = "social-links" href = "https://www.linkedin.com/company/lt-associates/">
+        <i class = "fab fa-linkedin-in"></i>
+      </a>
+  </nav>
+
+  <div class = "header-container">
+    <div class = "header-mask"></div>
+    <div class = "valign-wrapper header-subcontainer">
+      <div>
+        <h2 class="primary-heading">About the firm</h2>
+        <p>
+          <a href = "../../index.html" class = "root-link">Home</a><span class = "navigation-structure-slash">/</span><a href = "aboutfirm.html">About The Firm</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "aboutus-container">
+    <div class = "g-container">
+      <div class = "valign-wrapper aboutus-subcontainer">
+        <div>
+          <h1>LT & ASSOCIATES</h1>
+          <p class="subheading">An alliance of Chartered Accountants</p>
+  
+          <p class="aboutus-content">LT & Associates has been established in December 2017 in form of a partnership firm having its Head Office at Ghaziabad and Branch office at Etawah, by two qualified Chartered Accountants, CA Tapas Purwar & CA Lokesh Gupta.</p>
+  
+          <p class="aboutus-content">It is a chartered accountant firm rendering comprehensive professional services, which includes audit, management consultancy, tax consultancy, accounting services, secretarial services etc.</p>
+  
+          <p class="aboutus-content">The firm represents a combination of specialized skills, which are geared to offers sound financial advice and personalized proactive services. Following the top corporate culture, we believe in delivering accurate, relevant and timely information to the decision makers using industry expertise. We help companies to stay compliant and lawful. We aim at applying intelligence and expertise by providing realistic solutions to complicated business scenarios using analytical skills, functional expertise,and intensive training. Our result oriented and success driven partners believe in providing equal services to clients of all sizes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "whyus-container">
+    <div class = "whyus-mask"></div>
+    <div class = "g-container whyus-content">
+      <h3>Why Us?</h3>
+      <p>We believe in ethical work and technical expertise. We keep ourselves updated with changes in accounting standards, laws, bills, businesses and professional development. We offer respective skills, share insights and develop ideas to meet the business requirements to prevent your time and money in searching the same.</p>
+    </div>
+  </div>
+
+
+  <div class = "fixed-action-btn">
+    <a class = "btn-floating white btn-large">
+      <i class = "fas fa-share-alt" style = "color:black"></i>
+    </a>
+
+    <ul>
+      <li>
+        <div data-network="facebook" class = "btn-floating st-custom-button waves-effect waves-light facebook">
+          <i class = "fab fa-facebook-f"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="twitter" class = "btn-floating st-custom-button waves-effect waves-light twitter">
+          <i class = "fab fa-twitter"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="linkedin" class = "btn-floating st-custom-button waves-effect linkedin waves-light">
+          <i class = "fab fa-linkedin-in"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="whatsapp" class = "btn-floating st-custom-button waves-effect waves-light">
+          <i class = "fab fa-whatsapp"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="googleplus" class = "btn-floating st-custom-button waves-effect google waves-light">
+          <i class = "fab fa-google-plus-g"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class = "footer">
+    <div class = "g-container">
+      <div class = "links-grid">
+        <div>
+          <h5>About Us</h5>
+          <ul>
+            <li><a href = "html/aboutus/aboutfirm.html">About Us</a></li>
+            <li><a href = "html/aboutus/ethos.html">Our Ethos</a></li>
+            <li><a href = "html/aboutus/team.html">Our Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href = "html/services/corporate.html">Corporate Services</a></li>
+            <li><a href = "html/services/aduitassurance.html">Audit & Assurance Services</a></li>
+            <li><a href = "html/services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+            <li><a href = "html/services/directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "html/services/indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "html/services/riskadvisory.html">Risk Advisory Services</a></li>
+            <li><a href = "html/services/other.html">Other Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Useful Resources</h5>
+          <ul>
+            <li><a href = "http://www.mca.gov.in/">Ministry of Corporate Affairs</a></li>
+            <li><a href = "https://www.incometaxindia.gov.in">Income Tax</a>
+            <li><a href = "https://www.rbi.org.in/">Reserve Bank of India</a></li>
+            <li><a href = "http://dgft.gov.in/">Directorate General of Foreign Trade</a></li>
+            <li><a href = "http://www.cbec.gov.in/">Central Board of Excise and Customs</a></li>
+          </ul>
+        </div>
+        <div class = "address-footer-section">
+          <h5>Contact information</h5>
+          <p>Head Office: ||| F1/7 Nehru Nagar, Rakesh Marg, Ghaziabad - 201001</p>
+          <p>Branch Office: Gali No. 3 Khatkahata Baba Colony, Etawah - 206001</p>
+          <p>Email: ltassociates@outlook.in</p>
+          <p>Phone: 9717891049 / 9716616952</p>
+        </div>
+      </div>
+
+      <div class = "footer-grid-second">
+        <div class = "copyright-box">
+          <p class="copyright">&copy; LT & ASSOCIATES, All rights reserved</p>
+        </div>
+        <div class = "followus-box">
+          <a href = "https://www.facebook.com/LT-Associates-2030840253850304/" class = "footer-social-links">
+            <i class = "fab fa-facebook"></i>
+          </a>
+          <a href = "" class = "footer-social-links">
+            <i class = "fab fa-twitter"></i>
+          </a>
+          <a href = "https://www.linkedin.com/company/lt-associates/" class = "footer-social-links">
+            <i class = "fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "fixed-action-btn">
+    <a class = "btn-floating white btn-large">
+      <i class = "fas fa-share-alt" style = "color:black"></i>
+    </a>
+
+    <ul>
+      <li>
+        <div data-network="facebook" class = "btn-floating st-custom-button waves-effect waves-light facebook">
+          <i class = "fab fa-facebook-f"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="twitter" class = "btn-floating st-custom-button waves-effect waves-light twitter">
+          <i class = "fab fa-twitter"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="linkedin" class = "btn-floating st-custom-button waves-effect linkedin waves-light">
+          <i class = "fab fa-linkedin-in"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="whatsapp" class = "btn-floating st-custom-button waves-effect waves-light">
+          <i class = "fab fa-whatsapp"></i>
+        </div>
+      </li>
+
+      <li>
+        <div data-network="googleplus" class = "btn-floating st-custom-button waves-effect google waves-light">
+          <i class = "fab fa-google-plus-g"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "../../js/global.js"></script>
+</body>
+
+</html>

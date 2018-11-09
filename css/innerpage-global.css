@@ -1,0 +1,88 @@
+.header-container {
+    background-image: url('../images/things/common-innerpage-img.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 47vh;
+    width: 100%;
+    position: relative;
+    z-index: -6;
+}
+
+.header-container .header-mask {
+    background-color:rgba(0, 0, 0, 0.452);
+    width: 100%;
+    min-height: inherit;
+    position: absolute;
+    z-index: -8;
+}
+
+.header-container .header-subcontainer {
+    width: 100%;
+    min-height: inherit;
+}
+
+.header-container .header-subcontainer div {
+    width: 100%;
+    position: relative;
+}
+
+.header-container .header-subcontainer div h2.primary-heading,
+.header-container .header-subcontainer div p {
+    text-align: center;
+    color: white;
+}
+
+.header-container .header-subcontainer div p {
+    top: 50px;
+    position: relative;
+}
+
+.header-container .header-subcontainer div p > * {
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+nav.contact-nav {
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+/* 
+*****
+*****
+Tablet Styles
+*****
+***** 
+*/
+
+@media screen and (max-width: 760px) {
+    .header-container {
+        min-height: 40vh;
+    }
+
+    .header-container .header-subcontainer div h2.primary-heading {
+        font-size: 40px;
+    }
+
+    .header-container .header-subcontainer div p {
+        top: 20px;
+    }
+}
+
+
+
+/* 
+*****
+*****
+Mobile Devices
+*****
+*****
+ */
