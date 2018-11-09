@@ -1,0 +1,87 @@
+/* Team Section */
+.team-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 30px;
+}
+
+.team-container div.valign-wrapper {
+    width: inherit;
+    min-height: 100vh;
+    position: relative;
+}
+
+.team-container div h2 {
+    font-size: 29px;
+    text-align: center;
+}
+
+.team-container div p {
+    font-style: 17px;
+    text-align: center
+}
+
+.team-container .valign-wrapper div .team-member-grid {
+    display: grid;
+    grid-gap: 30px;
+    margin: 40px 0;
+}
+
+.team-container .grid1 {
+    grid-template-columns: 4fr 8fr;
+}
+
+.team-container .grid2 {
+    grid-template-columns: 8fr 4fr;
+}
+
+.team-container .team-member-grid img.team-member-image {
+    width: 100%;
+    position: relative;
+}
+
+.team-container .team-member-grid img.show-on-large {
+    display: block;
+}
+
+.team-container .team-member-grid img.show-on-small-med {
+    display: none;
+}
+
+.team-container .team-member-grid p.team-member-name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.team-container .team-member-grid p.team-member-description {
+    font-size: 17px;
+    text-align: left;
+}
+
+
+
+
+/* 
+*****
+*****
+Tablet Styles
+*****
+***** 
+*/
+
+@media screen and (max-width: 760px) {
+    .team-container .grid1,
+    .team-container .grid2 {
+        grid-template-columns: 12fr;
+    }
+
+    .team-container .team-member-grid img.show-on-large {
+        display: none;
+    }
+
+    .team-container .team-member-grid img.show-on-small-med {
+        display: block;
+    }
+}
