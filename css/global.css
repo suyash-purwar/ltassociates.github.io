@@ -113,7 +113,6 @@ button:focus {
   }
 }
 /* Imported global font from google fonts */
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
 * {
     font-family: Cambria;
 }
