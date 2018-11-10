@@ -11,31 +11,56 @@
   <!-- My CSS Files -->
   <link rel="stylesheet" href="../../css/global.css"> <!-- This CSS file is common in all pages -->
   <link rel="stylesheet" href="../../css/innerpage-global.css">
-  <link rel="stylesheet" href="../../css/team.css">
 
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <!-- ShareThis API -->
   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ac4f51b003b52001341b3d4&product=custom-share-buttons"></script>
+
+  <style>
+  .content {
+    padding: 50px 30px;
+  }
+
+  .content h3 {
+    font-size: 35px;
+  }
+
+  .content p,
+  .content li {
+    font-size: 17px;
+  }
+
+  .content ul li{
+    list-style-position: outside;
+    list-style-type: circle !important;
+  }
+
+  .content ul ul li {
+    list-style-position: inside;
+    padding-left: 10px;
+    list-style-type: disc !important;
+  }
+  </style>
 </head>
 
 <body>
   <ul id="aboutus-dropdown" class="dropdown-content">
-    <li><a href = "team.html">Our Team</a></li>
-    <li><a href = "ethos.html">Our Ethos</a></li>
-    <li><a href = "aboutfirm.html">About the firm</a></li>
+    <li><a href = "../aboutus/team.html">Our Team</a></li>
+    <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+    <li><a href = "../aboutus/aboutfirm.html">About the firm</a></li>
   </ul>
   <ul id="taxation-dropdown" class="dropdown-content">
-    <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
-    <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
+    <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
+    <li><a href = "directtaxation.html">Direct Taxation</a></li>
   </ul>
   <ul id="services-dropdown" class="dropdown-content">
-    <li><a href = "../services/corporate.html">Corporate Services</a></li>
-    <li><a href = "../services/auditassurance.html">Audit & Assurance Services</a></li>
-    <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
+    <li><a href = "corporate.html">Corporate Services</a></li>
+    <li><a href = "auditassurance.html">Audit & Assurance Services</a></li>
+    <li><a href = "bookkeeping.html">Book Keeping and Outsourcing Services</a></li>
     <li><a href = "#!" class = "sub-dropdown" data-target="taxation-dropdown">Taxation</a></li>
-    <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-    <li><a href = "../services/other.html">Other Services</a></li>
+    <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+    <li><a href = "other.html">Other Services</a></li>
   </ul>
   <div id="large-screen-nav">
     <div class="navbar-fixed">
@@ -82,26 +107,26 @@
     <li id = "aboutus-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-aboutus')"><a href = "#!">About Us</a></li>
     <li id = "dropdown-aboutus">
       <ul>
-        <li><a href = "team.html">Our Team</a></li>
-        <li><a href = "ethos.html">Our Ethos</a></li>
-        <li><a href = "aboutfirm.html">About the firm</a></li>
+        <li><a href = "../aboutus/team.html">Our Team</a></li>
+        <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+        <li><a href = "../aboutus/aboutfirm.html">About the firm</a></li>
       </ul>
     </li>
     <li id = "dropdown-services-trigger" onclick = "toggleAboutusDropdown('dropdown-services')"><a href = "#!">Services</a></li>
     <li id = "dropdown-services">
       <ul>
-        <li><a href = "../services/corporate.html">Corporate Services</a></li>
-        <li><a href = "../services/auditassurance.html">Audit & Assurance Services</a></li>
-        <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
+        <li><a href = "corporate.html">Corporate Services</a></li>
+        <li><a href = "auditassurance.html">Audit & Assurance Services</a></li>
+        <li><a href = "bookkeeping.html">Book Keeping and Outsourcing</a></li>
         <li id = "taxation-dropdown-trigger" onclick = "toggleAboutusDropdown('dropdown-taxation')">Taxation</li>
         <li id = "dropdown-taxation">
           <ul>
-            <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
-            <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
           </ul>
         </li>
-        <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-        <li><a href = "../services/other.html">Other Services</a></li>
+        <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+        <li><a href = "other.html">Other Services</a></li>
       </ul>
     </li>
     <li><a href = "../menu/news.html">News</a></li>
@@ -135,43 +160,44 @@
     <div class = "header-mask"></div>
     <div class = "valign-wrapper header-subcontainer">
       <div>
-        <h2 class="primary-heading">Our Team</h2>
+        <h2 class="primary-heading">Corporate Services</h2>
         <p>
-          <a href = "../../index.html" class = "root-link">Home</a><span class = "navigation-structure-slash">/</span><a href = "team.html">Team</a>
+          <a href = "../../index.html" class = "root-link">Home</a><span class = "navigation-structure-slash">/</span><a href = "corporate.html">Corporate Services</a>
         </p>
       </div>
     </div>
   </div>
 
-  <div class = "team-container">
-    <div class = "g-container valign-wrapper">
-      <div class = "valign-wrapper">
-        <div>
-          <h2>Our Dedicated Team</h2>
-          <p>Our dedicated team comprises of competent people with extensive knowledge and experience. Our professionalism and expertise help us to service our clients to their satisfaction. The key members of the firm are:</p>
+  <div class = "content">
+    <div class = "g-container">
+      <h3>Audit & Assurance Services</h3>
+
+      <p>Our assurance services include Statutory audit, Tax audit, GSTaudits,and Investigations. Our Assurance assignments are conducted in accordance with the engagement standards issued by the ICAI. Our Audit Methodology is based on the Auditing Standards issued by the ICAI which are converged with the International Auditing Standards. As part of such audit assignments, we assess the adequacy of internal controls and our audit findings reflect suggestions for improvement of such controls. We also assist in the conversion of accounts in accordance with IFRS/ Ind-AS. We offer the following Assurance services:</p>
   
-          <div class = "team-member-grid grid1">
-            <img class = "team-member-image" src = "../../images/things/team-member1.png">
-            <div>
-              <p class="team-member-name">CA Tapas Purwar (ACA, B.Com)</p>
-              <p class="team-member-description">CA Tapas Purwar became a member of Institute of Chartered Accountant of India in February 2017. He has rich experience in the field of Direct Taxation, Statutory Audit & Handling Corporate affairs in different areas.</p>
-            </div>
-          </div>
-          
-      
-          <div class = "team-member-grid grid2">
-            <img class = "team-member-image show-on-small-med" src = "../../images/things/team-member2.png">
-            <div>
-              <p class="team-member-name">CA Lokesh Gupta (ACA, B.Com(H))</p>
-              <p class="team-member-description">CA Lokesh Gupta became a member of Institute of Chartered Accountant of India in January 2017. He has a rich experience in the field of Indirect Taxation, Internal Audit and Handling Management Consultancy Assignments.</p>
-            </div>
-            <img class = "team-member-image show-on-large" src = "../../images/things/team-member2.png">
-          </div>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <b>Statutory Audits:</b> A statutory audit is a legally required review of the accuracy of a company's or government's financial records. The purpose of a statutory audit is to determine whether an organization is providing a fair and accurate representation of its financial position by examining the financial transactions and information maintained by the organization in its books of accounts.
+        </li>
+        <br>
+        <li>
+          <b>Audit under Income Tax:</b> Every Organization whose turnover exceeds the limit prescribed under Section 44AB is required to be audited under Income Tax Law from income tax viewpoint such as income, deductions, compliance with income tax law etc. Tax audit makes the income computation for filing the return easy.
+          Further, in case of Religious or Charitable Trust registered under section 12 AA, where the total income of the trust before allowing exemption u/s 11 & 12 exceeds the maximum amount not chargeable to tax, then accounts of the trust should be audited.
+        </li>
+        <br>
+        <li>
+          <b>GST Audits:</b> Every registered person whose turnover exceeds during the financial year exceeds the prescribed limit shall get it accounts audited under Goods & Service Tax Law.
+        </li>
+        <br>
+        <li>
+          <b>Special Audits and Investigations:</b> The objective such audit is to critically review the operations at various levels of the management to ensure flawless process and effective control.
+        </li>
+      </ul>
+  
+      <br>
+  
+      <p>At LT & Associates, an elite team of qualified auditors is designated to do such audits.The audit reportsare prepared strictly in accordance with the rules and regulations defined by the Government agencies.</p>
     </div>
   </div>
-
 
   <div class = "fixed-action-btn">
     <a class = "btn-floating white btn-large">
@@ -217,21 +243,21 @@
         <div>
           <h5>About Us</h5>
           <ul>
-            <li><a href = "aboutfirm.html">About Us</a></li>
-            <li><a href = "ethos.html">Our Ethos</a></li>
-            <li><a href = "team.html">Our Team</a></li>
+            <li><a href = "../aboutus/aboutfirm.html">About Us</a></li>
+            <li><a href = "../aboutus/ethos.html">Our Ethos</a></li>
+            <li><a href = "../aboutus/team.html">Our Team</a></li>
           </ul>
         </div>
         <div>
           <h5>Services</h5>
           <ul>
-            <li><a href = "../services/corporate.html">Corporate Services</a></li>
-            <li><a href = "../services/auditassurance.html">Audit & Assurance Services</a></li>
-            <li><a href = "../services/bookkeeping.html">Book Keeping and Outsourcing</a></li>
-            <li><a href = "../services/directtaxation.html">Direct Taxation</a></li>
-            <li><a href = "../services/indirecttaxation.html">Indirect Taxation</a></li>
-            <li><a href = "../services/riskadvisory.html">Risk Advisory Services</a></li>
-            <li><a href = "../services/other.html">Other Services</a></li>
+            <li><a href = "corporate.html">Corporate Services</a></li>
+            <li><a href = "auditassurance.html">Audit & Assurance Services</a></li>
+            <li><a href = "bookkeeping.html">Book Keeping and Outsourcing</a></li>
+            <li><a href = "directtaxation.html">Direct Taxation</a></li>
+            <li><a href = "indirecttaxation.html">Indirect Taxation</a></li>
+            <li><a href = "riskadvisory.html">Risk Advisory Services</a></li>
+            <li><a href = "other.html">Other Services</a></li>
           </ul>
         </div>
         <div>
