@@ -1,4 +1,4 @@
-# LT&Associates
+# LTGHA & Associates
 
 This is the website that I am developing for my client for his CA Firm.
 
