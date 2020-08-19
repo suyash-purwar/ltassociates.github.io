@@ -1,9 +1,16 @@
-// currentSlide.children[1].children[0].children[1].style.animation
+window.onscroll = function() {
+  navbarViewEngineForLargeScreens(); // Function for showing thw navbar after some scrolling
+  svgIconAnimationViewEngine(); // Function for showing
+}
+
+// This function is made for supporting Carousel in index.html
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.main-carousel');
   const carouselInstance = M.Carousel.init(carousel, {
     fullWidth: true,
     indicators: true,
+    // This function triggers when new slide comes  
+    // Changes the content and adds animation to elements as the new slide comes
     onCycleTo: function(currentSlide) {
       currentSlide.children[1].children[0].children[1].style.animation = "moveInBottom .7s ease-in";
       setInterval(() => {
@@ -18,21 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Brings new slide after 5 seconds
   setInterval(function() {
     carouselInstance.next();
   }, 5000);
 });
 
+// Initialising code for sharing button slide left
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.fixed-action-btn');
   var instances = M.FloatingActionButton.init(elems, {});
 });
 
-window.onscroll = function() {
-  navbarViewEngineForLargeScreens(); // Function for showing thw navbar after some scrolling
-  svgIconAnimationViewEngine(); // Function for showing
-}
-
+// Adding animations in large screen nav
 function navbarViewEngineForLargeScreens() {
   if (window.innerWidth > 760) {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -43,6 +48,7 @@ function navbarViewEngineForLargeScreens() {
   }
 }
 
+// Functionality for animating svg icons
 let count = 0;
 function svgIconAnimationViewEngine() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
@@ -70,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
     closeOnClick: false
   });
 
+
+  //  Dropdown initialization for sub dropdown
   const sub_dropdown = document.querySelector('.sub-dropdown');
   const sub_dropdownElem = M.Dropdown.init(sub_dropdown, {
     inDuration: 300,
@@ -81,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// For Sidenav
+// Initialising code for side nav
 document.addEventListener('DOMContentLoaded', function() {
   const sidenav = document.querySelector('.sidenav');
   const sidenavInstance = M.Sidenav.init(sidenav, {

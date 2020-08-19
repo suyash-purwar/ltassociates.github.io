@@ -1,16 +1,21 @@
 function isFormDataValid() {
+  // Defaualt feature of contact form in over rided
+  // Hence, All the validations are done explicitly
+
+  // Expected data which will be filled in considered true
+  // If data is invalid, this variable's value will be false
   let isFormValid = true;
 
   let isErrorInName = {}, isErrorInPhone = {}, isErrorInEmail = {}, isErrorInMessage = {};
 
-  // Name Field
+  // Name Field checker
   const name = document.querySelector("input[name=name]").value;
   if (typeof name == "string" && !Boolean(name.trim())) {
     isErrorInName.isError = true;
     isErrorInName.errorCause = "Name field should not be empty and should not contain numbers";
   }
 
-  // Phone field
+  // Phone field data checker
   const phone = document.querySelector("input[name=phone]").value;
 
   if (phone.length <= 6) {
@@ -25,7 +30,7 @@ function isFormDataValid() {
     })
   }
 
-  // Email field
+  // Email field data checker
   const email = document.querySelector("input[name=email]").value;
   if (!Boolean(email.trim())) {
     isErrorInEmail.isError = true;
@@ -37,7 +42,7 @@ function isFormDataValid() {
     }
   }
 
-  // Message field
+  // Message field data checker
   const message = document.querySelector("textarea[name=message]").value;
   if (message.length < 10) {
     isErrorInMessage.isError = true;
@@ -71,7 +76,8 @@ database.settings({
 });
 
 document.querySelector('#contactus-form').addEventListener('submit', function(e) {
-  e.preventDefault();
+  e.preventDefault(); // Default behaviour of form is over rided here
+  // Hence, Data validation is made in below's if condition
 
   if (isFormDataValid()) {
     const formData = (function() {

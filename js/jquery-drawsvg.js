@@ -1,3 +1,7 @@
+/*
+  **** Don't mess with it ****
+*/
+
 (function(factory) {
   /* global define */
   if ( typeof define === 'function' && define.amd ) {

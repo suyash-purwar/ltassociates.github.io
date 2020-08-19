@@ -230,7 +230,6 @@ nav.contact-nav {
 }
 
 /* Styles for QA Section */
-
 .qa-container {
   background-image: url('images/things/quality_container_img.jpg');
   background-position: center center;
@@ -248,7 +247,6 @@ nav.contact-nav {
   height: 100%;
   padding: 20px;
 }
-
 
 .qa-container .qa-mask {
   position: absolute;

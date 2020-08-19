@@ -1,5 +1,6 @@
+// These JavaScript functions manipulates the html pages
+// Some of these functions are directly called because their functionality is being specified in MaterializeCSS
 // This file is connected to every html page except index.html
-
 window.onscroll = function() {
   navbarViewEngineForLargeScreens(); // Function for showing thw navbar after some scrolling
 }
